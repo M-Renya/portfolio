@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Air Jordan</title>
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
+
+    <!-- font awesome cdn link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/detail.css" />
+  </head>
+  <body class="wrap">
+    <!-- header section starts  -->
+
+    <header class="header">
+      <div id="menu-btn" class="fas fa-bars"></div>
+
+      <!-- <i>～</i>のタグで囲まれたテキストはイタリック体 -->
+      <a href="./index.html" class="logo"
+        ><img src="images/logo.png" alt=""
+      /></a>
+
+      <nav class="navbar">
+        <a href="#home">home</a>
+        <a href="#about">about</a>
+        <a href="#menu">categorys</a>
+        <a href="#book">message</a>
+      </nav>
+
+      <!-- <a href="#" class="btn">book a table</a> -->
+    </header>
+
+    <!-- header section ends -->
+
+    <!-- home section starts  -->
+
+    <section class="home" id="home">
+      <div class="circle2"></div>
+      <div class="row">
+        <div class="content">
+          <h3>
+            <span id="circle2" style="color: #0000cd">Air Jordan 1</span> <br />
+            it's AJ1 Fragment 'blue'
+          </h3>
+
+          <p>
+            AJ1にまつわるエピソードもまたかっこよくて、ファンを唸らしているのです。<br />
+            当時、NBA（バスケットボール界）の規則では、「白の面積が80％以上使用したシューズを使用する」という決まりがありました。
+            そんな中、シカゴブルズというチームに所属していたマイケルジョーダンは、そのチームカラーである赤黒をあしらったモデルを履いてプレーし、世界中を驚かしました。
+          </p>
+        </div>
+
+        <div class="image">
+          <img src="images/img2.png" class="main-home-image" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <!-- home section ends -->
+
+    <!-- footer section starts  -->
+
+    <section class="footer">
+      <div class="box-container">
+        <div class="box">
+          <h3>Air Jordan Series</h3>
+          <a href="#"> <i class="fas fa-arrow-right"></i>aj1 </a>
+          <a href="#"> <i class="fas fa-arrow-right"></i>aj2 </a>
+          <a href="#"> <i class="fas fa-arrow-right"></i>aj3 </a>
+          <a href="#"> <i class="fas fa-arrow-right"></i>aj4 </a>
+          <a href="#"> <i class="fas fa-arrow-right"></i>aj5 </a>
+        </div>
+
+        <div class="box">
+          <h3>quick links</h3>
+          <a href="#"> <i class="fas fa-arrow-right"></i> home </a>
+          <a href="#"> <i class="fas fa-arrow-right"></i> about </a>
+          <a href="#"> <i class="fas fa-arrow-right"></i> categorys </a>
+          <a href="#"> <i class="fas fa-arrow-right"></i> review </a>
+          <a href="#"> <i class="fas fa-arrow-right"></i> message </a>
+        </div>
+
+        <div class="box">
+          <h3>contact info</h3>
+          <a href="#"> <i class="fas fa-phone"></i> +123-456-7890 </a>
+          <a href="#"> <i class="fas fa-phone"></i> +111-222-3333 </a>
+          <a href="#"> <i class="fas fa-envelope"></i> sample@gmail.com </a>
+          <a href="#">
+            <i class="fas fa-envelope"></i> mumbai, india = 400104
+          </a>
+        </div>
+
+        <div class="box">
+          <h3>contact info</h3>
+          <a href="#"> <i class="fab fa-facebook-f"></i> facebook </a>
+          <a href="#"> <i class="fab fa-twitter"></i> twitter </a>
+          <a href="#"> <i class="fab fa-instagram"></i> instagram </a>
+        </div>
+      </div>
+
+      <div class="credit">copyright©︎ <span>m.renya</span> to HAL Tokyo</div>
+    </section>
+
+    <!-- footer section ends -->
+
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+    <!-- custom js file link  -->
+    <script src="js/script.js"></script>
+
+    <script type="text/javascript">
+      function imgSlider(anything) {
+        document.querySelector(".starbucks").src = anything;
+      }
+
+      function changeCircleColor(color) {
+        const circle = document.querySelector(".circle");
+        circle.style.background = color;
+      }
+    </script>
+  </body>
+</html>

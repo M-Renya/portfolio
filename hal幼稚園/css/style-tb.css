@@ -1,0 +1,473 @@
+@charset "utf-8";
+
+/* Webフォントを定義 */
+@font-face {
+  font-family: "殴り書きクレヨン"; /* フォント名 */
+  /* フォーマットごとにパスを指定 */
+  src: url("../fonts/myfont.ttf") format("truetype");
+}
+
+html {
+  font-family: "ヒラギノ角ゴ Pro W3" "Hiragino Kaku Gothic Pro";
+  font-weight: 900;
+  background-color: #fff;
+  color: black;
+  font-size: 10px;
+}
+
+body {
+  background-image: url("../images/ddddd.jpg");
+  background-color: #fff;
+}
+
+.wrapper {
+  position: relative;
+}
+
+/* ハンバーガー */
+#navArea {
+  display: block;
+  position: absolute;
+}
+
+#navArea span {
+  color: white;
+}
+
+/* サイドナビゲーション */
+
+.right_nav {
+  display: none;
+  /* position: absolute; */
+  position: fixed;
+  top: 0;
+  right: 10px;
+  z-index: 100; /* 最前列 */
+}
+
+.right_nav nav ul li {
+  margin-top: 0.8rem;
+}
+
+.right_nav nav ul li:hover {
+  transform: rotate(10deg);
+  opacity: 0.9;
+}
+
+.right_nav nav ul li a img {
+  margin-top: 3px;
+  width: 12vh;
+}
+
+ul.dropdown-menu.show {
+  background-color: rgb(143, 248, 248);
+  border-radius: 10px;
+  opacity: 0.9;
+}
+
+ul.dropdown-menu.show li a {
+  border-bottom: dotted;
+}
+
+ul.dropdown-menu.show li:hover {
+  transform: none;
+}
+ul.dropdown-menu.show li a:hover {
+  font-size: 1.3rem;
+}
+
+/* サイドナビゲーション fin */
+
+/* メインビジュアル */
+
+.mainvisual {
+  position: relative;
+}
+
+.mainvisual h1 {
+  position: absolute;
+  margin: 1.5rem 0 0 3rem;
+  z-index: 2; /* 画像より前 */
+}
+
+.mainvisual h1 img {
+  width: 20rem;
+}
+
+.mainvisual h2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  font-size: 2rem;
+  z-index: 2;
+}
+
+.mainvisual span:nth-child(1) {
+  font-size: 100px;
+  color: rgb(0, 247, 255);
+}
+.mainvisual span:nth-child(4) {
+  font-size: 100px;
+  color: rgb(0, 247, 255);
+}
+.mainvisual span:nth-child(11) {
+  font-size: 100px;
+  color: rgb(0, 255, 76);
+}
+.mainvisual span:nth-child(12) {
+  font-size: 100px;
+  color: rgb(0, 255, 76);
+}
+
+@keyframes zoomUp {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.15);
+  }
+}
+
+.swiper-slide-active .slide-img,
+.swiper-slide-duplicate-active .slide-img,
+.swiper-slide-prev .slide-img {
+  animation: zoomUp 10s linear 0s 1 normal both;
+}
+.slide-img {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  /* display: flex; */
+  /* filter: brightness(80%); */
+  text-align: center;
+  display: block;
+}
+
+/* メインビジュアル fin */
+
+/* メインコンテンツ */
+
+main {
+  /* padding-top: 10rem; */
+  /* background-image: url("../images/rainbow.png"); */
+  text-align: center;
+}
+
+main .article_1 {
+  width: 100%;
+  padding-top: 100px;
+
+  color: black;
+}
+
+.article_1 span {
+  font-family: "殴り書きクレヨン", sans-serif;
+}
+
+main article .star {
+  color: yellow;
+}
+
+main .article_1 img {
+  display: none;
+  width: 12rem;
+  margin: -2rem 1rem 2rem;
+}
+
+main .article_1 .text {
+  margin-top: 4rem;
+  display: block;
+}
+
+/* main .article_1 .text .left {
+    margin: 0 70% 0 0;
+}
+
+main .article_1 .text .right {
+    margin: 0 0 0 70%;
+} */
+
+main .article_1 h2 {
+  white-space: nowrap; /* 文字を改行させない */
+  margin-bottom: 50px;
+  font-size: 2.6rem;
+  font-weight: 900;
+  /* font-family: "Nico Moji"; */
+}
+
+main .article_1 p {
+  text-align: left;
+  /* padding-bottom: 100px; */
+  padding: 0 0 100px 10%;
+  font-size: 1.2rem;
+  letter-spacing: 0.2rem;
+  line-height: 2rem;
+  font-weight: 200;
+  text-shadow: 1px 1px 2px white;
+}
+
+/*==================================================
+スライダーのためのcss
+===================================*/
+.slider img {
+  width: 100%; /*スライダー内の画像を横幅100%に*/
+  height: auto;
+  border-radius: 30px;
+}
+
+/*slickのJSで書かれるタグ内、スライド左右の余白調整*/
+
+.slider .slick-slide {
+  margin: 0 10px; /*スライド左右の余白調整*/
+}
+
+.slider {
+  padding: 0;
+}
+
+/*==================================================
+スライダーのためのcss fin
+===================================*/
+
+/* main .article_2 {
+  background-color: rgba(255, 255, 255, 0.9);
+} */
+
+.article_2 span {
+  font-size: 3rem;
+  font-family: "殴り書きクレヨン", sans-serif;
+}
+
+main .article_2 h2 {
+  white-space: nowrap; /*文字を改行させない*/
+  /* margin-top: 100px; */
+  padding: 5rem 0 5rem;
+  font-size: 2.6rem;
+  font-weight: 900;
+  text-shadow: 1px 1px 2px white;
+  /* font-family: "Nico Moji"; */
+}
+
+main .article_2 p {
+  margin-left: 10%;
+  width: 80vw;
+  padding: 20px 20px;
+  font-size: 1rem;
+  letter-spacing: 0.5rem;
+  line-height: 2rem;
+  font-weight: 200;
+  text-align: left;
+  background-color: rgb(11, 134, 248);
+  color: #fff;
+  text-shadow: 1px 1px 1px rgb(3, 3, 3);
+  border-radius: 30px;
+  /* float: left; */
+  clear: both;
+}
+
+main .article_2 img {
+  display: none;
+  position: relative;
+  right: 10%;
+  margin-left: 2%;
+  width: 300px;
+  /* float: right; */
+  clear: both;
+  /* text-shadow: 10px 10px 20px rgb(6, 2, 247); */
+}
+
+main .img {
+  clear: both;
+  display: flex;
+}
+
+main .img img {
+  margin-top: 100px;
+  width: 50vw;
+}
+
+main .article_3 img {
+  width: 100px;
+}
+
+main .article_3 .img1 {
+  display: none;
+  position: absolute;
+  margin-top: 100px;
+  left: 100px;
+}
+
+main .article_3 .img2 {
+  display: none;
+  position: absolute;
+  margin-top: 100px;
+  right: 100px;
+
+  right: 100px;
+}
+
+main .article_3 .text3 {
+  margin: 0 auto;
+  padding-top: 50px;
+  border-radius: 30px;
+  /* background-color: rgba(255, 113, 113, 0.8); */
+}
+
+.text3 span {
+  font-family: "殴り書きクレヨン", sans-serif;
+  font-size: 3rem;
+}
+
+main .article_3 h2 {
+  width: 100vw;
+  /* margin-top: 100px; */
+  padding: 5rem 0 5rem;
+  font-size: 2.6rem;
+  font-weight: 900;
+  text-shadow: 1px 1px 2px white;
+}
+
+main .article_3 p {
+  width: 80vw;
+  margin: 0 5%;
+  padding-bottom: 100px;
+  font-size: 1.2rem;
+  letter-spacing: 0.2rem;
+  line-height: 2rem;
+  font-weight: 200;
+  text-shadow: 1px 1px 2px white;
+}
+
+main .article_4 {
+  position: relative;
+}
+
+main .article_4 img {
+  max-width: 100%;
+  height: 100vh;
+}
+
+main .article_4 .text4 {
+  /* height: 90vh; */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  margin: 0;
+  padding: 2% 1rem;
+  background-color: #fff;
+}
+
+main .article_4 h3 {
+  font-size: 100%;
+  font-weight: 500;
+  margin: 1rem 0;
+}
+
+main .article_4 p {
+  margin-bottom: 0.5rem;
+  line-height: 1.4rem;
+  font-size: 5%;
+  font-weight: normal;
+}
+
+main .article_4 button {
+  background-color: #ffde02;
+  border-radius: 10px;
+  font-size: 0.8rem;
+  font-weight: normal;
+}
+
+main button a {
+  text-decoration: none;
+  color: #000;
+}
+main button:hover {
+  transform: rotate(2deg);
+  opacity: 0.8;
+}
+
+.info {
+  max-width: 100%;
+  margin: -0.1rem 0 -0.2rem 0;
+  background-color: rgb(200, 253, 253, 0.8);
+  z-index: 10;
+}
+
+main .article_5 {
+  position: relative;
+  /* height: 50vh; */
+  padding: 10rem 0;
+  background-color: #ffde02;
+}
+
+main .article_5 .text5 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  margin: 0;
+  padding: 0;
+}
+
+main .article_5 h2 {
+  margin: 10rem 0 3rem 0;
+  font-size: 2rem;
+  font-weight: normal;
+}
+
+main .article_5 table {
+  margin-bottom: 10rem;
+  text-align: left;
+  height: 10rem;
+  font-weight: normal;
+}
+
+/* メインコンテンツ fin */
+
+/* フッター */
+
+.footer {
+  position: relative;
+}
+
+.footer .footer_logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  /* display: flex;
+  justify-content: space-around; */
+}
+
+.footer img {
+  max-width: 100%;
+}
+
+footer {
+  width: 100%;
+  padding: 15px 0;
+  display: table-cell; /* 上下左右中央設定 */
+  vertical-align: middle;
+  text-align: center;
+  background-color: #1b7bdb;
+  color: #fff;
+}
+footer small {
+  font-size: 0.8rem;
+  font-weight: normal;
+}
+
+/* フッター　fin */
